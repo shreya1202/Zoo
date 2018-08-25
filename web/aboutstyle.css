@@ -1,0 +1,36 @@
+.about2 {
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 0.1vw;
+  padding: 0.1vw 0.5vw;
+}
+
+.about2 > div {
+  padding: 0vw 0;
+  height: 25vw;
+  width: 25vw;
+}
+
+img {
+	height: 20vw;
+	width: 25vw;
+}
+
+.abt {
+	height: 300vw;
+	width: 300vw;
+	border-bottom: 0.5vw solid black;
+	background-color: mistyrose;
+}
+
+h3 {
+	font-size: 1.8vw;
+	font-family: 'Handlee', cursive;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.grid-container {
+	background-image: url('https://st2.depositphotos.com/1021369/5986/v/450/depositphotos_59860273-stock-illustration-animals-seamless-pattern.jpg');
+}

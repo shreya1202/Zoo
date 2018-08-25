@@ -1,0 +1,109 @@
+.grid-container {
+	background-image: url('https://st2.depositphotos.com/1021369/5986/v/450/depositphotos_59860273-stock-illustration-animals-seamless-pattern.jpg');
+}
+
+body {
+background-image: url(http://www.psdgraphics.com/wp-content/uploads/2012/07/soft-yellow-waves.jpg);
+  background-size: cover;
+}
+
+.login {
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 2vw;
+  padding: 0.5vw 0.4vw;
+  margin-top: 3vw;
+  margin-left: 2vw;
+}
+.login > div {
+  padding: 1vw 0;
+}
+
+.login::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 0.4vw;
+  background-color: gainsboro;
+  border: none;
+  text-align: center;
+  font-size: 1.2vw;
+  padding: 0.9vw;
+  width: 20vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0.5vw;
+}
+
+.button span {
+  cursor: pointer;
+  color: black;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -6vw;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 5vw;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#admin, #stock, #care {
+	display: inline-grid;
+	font-family: 'Merienda', cursive;
+	font-size: 1.5vw;
+	width: 30vw;
+	padding: 0.3vw;
+	border-left: 0.8vw solid black;
+	background-color: lightgrey;
+}
+
+input {
+	width: 15vw;
+	height: 2.2vw;
+}
+
+input:focus {
+	background-color: lavender;
+}
+
+button {
+	width: 4.8vw;
+	font-family: 'Merienda', cursive;
+	margin-left: 6vw;
+	font-weight: bolder;
+}
+
+.form {
+	display: grid;
+	align-content: center;
+  	grid-template-columns: 30vw 30vw 30vw;
+  	grid-column-gap: 1vw;
+  	padding: 1vw 1vw;
+}
+
+#stock {
+	grid-area: 1 / 2;
+}
+
+#care {
+	grid-area: 1 / 3;
+}

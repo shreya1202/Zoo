@@ -1,0 +1,18 @@
+.grid-container {
+	background-image: url('https://st2.depositphotos.com/1021369/5986/v/450/depositphotos_59860273-stock-illustration-animals-seamless-pattern.jpg');
+}
+
+.flor1 {
+	background-image: url(https://images.pexels.com/photos/40797/wild-flowers-flowers-plant-macro-40797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	height: 40vw;
+	width: auto;
+	text-align: center;
+	background-size: cover;
+	box-shadow: 0.8vw 0.8vw 2vw 2vw mistyrose inset;
+}
+
+.flor2 {
+	background-color: mistyrose;
+	font-family: 'Handlee', cursive;
+	font-size: 1.5vw;
+}

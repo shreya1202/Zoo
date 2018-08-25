@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucknow Zoo</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Snowburst+One|Merienda|Audiowide" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+
+<body>
+<div class="grid-container">
+
+<div class="head1">
+	<a href="index.html">
+	<img src="logo.png" style="height: 10vw; width: 12vw; z-index: 1;"></a>
+</div>
+<div style="z-index: 1; font-size: 2.6vw; font-family: 'Audiowide', cursive; font-weight: bolder; color: white;">
+	<h>THE<br>ZOOLOGICAL PARK</h>
+</div>
+
+<div class="head2">
+		<ul>
+			<li><a href="home.html">About</a></li>
+			<li>
+				<div class="dropdown">
+					<a class="dropbtn" href="about.html">Attractions</a>
+					<div class="dropitems">
+						<a href="animals.html">Indian And Exotic Animals</a>
+						<a href="birds.html">Indian And Exotic Birds</a>
+						<a href="reptile.html">Reptiles</a>
+						<a href="fish.html">Fishes</a>
+						<a href="museum.html">Museum</a>
+						<a href="floral.html">Floral Kingdom</a>
+					</div>
+				</div>
+			</li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="feedback.jsp">Feedback</a></li>
+		</ul>
+</div>
+
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade" onmouseover="mouseover1()" onmouseout="mouseout1()">
+  <img src="Images/leo1.jpg" style="margin-top: -200px;">
+  <div class="text" id="one" style="top: 7vw; left: 44vw; font-size: 1.7vw; font-weight: bolder; color: azure;"><strong onclick="myfunc1()">Leopards are very agile, and can run at over 36 miles per hour,<br> leap over 20 feet and jump up to 10 feet.</strong></div>
+</div>
+
+<script type="text/javascript">
+	function mouseover1() {
+		document.getElementById("one").style.opacity=1;
+	}
+	function mouseout1() {
+		document.getElementById("one").style.opacity=0;
+	}
+	function myfunc1() {
+		window.location= 'animals.html';
+	}
+</script>
+
+<div class="mySlides fade"  onmouseover="mouseover2()" onmouseout="mouseout2()">
+  <img src="Images/Peacock1.jpeg" style="margin-top: -200px;">
+  <div class="text" id="two" style="top: 42vw; left: 1vw; font-size: 1.7vw; font-weight: bolder;">
+  	<strong onclick="myfunc2()">Colors of the tail will look different every time you change the angle of looking because of the reflection of the light.<br>Tail feathers have eye-like spots, surrounded with red, green, gold and red feathers</strong></div>
+</div>
+
+<script type="text/javascript">
+	function mouseover2() {
+		document.getElementById("two").style.opacity=1;
+	}
+	function mouseout2() {
+		document.getElementById("two").style.opacity=0;
+	}
+	function myfunc2() {
+		window.location= 'birds.html';
+	}
+</script>
+
+<div class="mySlides fade"  onmouseover="mouseover3()" onmouseout="mouseout3()">
+  <img src="Images/deer1.jpeg" style="margin-top: -200px;">
+  <div class="text" id="three" style="top: 45vw; left: 15vw; font-size: 3vw; font-weight: bolder;">
+  	<strong onclick="myfunc3()">Fawns are essentially odorless to predators.</strong>
+  </div>
+</div>
+
+<script type="text/javascript">
+	function mouseover3() {
+		document.getElementById("three").style.opacity=1;
+	}
+	function mouseout3() {
+		document.getElementById("three").style.opacity=0;
+	}
+	function myfunc3() {
+		window.location= 'animals.html';
+	}
+</script>
+
+<div class="mySlides fade"  onmouseover="mouseover4()" onmouseout="mouseout4()">
+  <img src="Images/fish1.jpg" style="margin-top: -200px;">
+  <div class="text" id="four" style="top: 18vw; left: 4vw; font-size: 3vw; font-weight: bolder; color: azure;">
+  	<strong onclick="myfunc4()">Fishes are the oldest inhabitors of the World.</strong>
+  </div>
+</div>
+
+<script type="text/javascript">
+	function mouseover4() {
+		document.getElementById("four").style.opacity=1;
+	}
+	function mouseout4() {
+		document.getElementById("four").style.opacity=0;
+	}
+	function myfunc4() {
+		window.location= 'birds.html';
+	}
+</script>
+
+</div>
+
+<script type="text/javascript">
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}	
+</script>
+
+</body>
+</html>
